@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    font-family: "montserrat";
+    font-size: 16px;
+    font-style: normal;
+    /* margin-bottom: 50px; */
+}
+
+.navbar-brand {
+    font-family: "Lobster";
+    font-size: 30px;
+}
+
+.navbar-brand a:hover {
+    color: none;
+}
+
+.nav-item a {
+    border-radius: 20px;
+}
+
+.navbar-nav a:hover {
+    background-color: violet;
+    border-radius: 20px;
+}
+
+
+body {
+    background-color: #fff6f0;
+    font: 16px/28px "montserrat";
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/* gallery */
+.gallery {
+    /* background-color: mediumslateblue; */
+    padding: 80px 0;
+}
+
+.gallery img {
+    background-color: #e49d9d;
+    padding: 15px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#gallery-modal .gallery-foto {
+    width: 100%;
+}
+
+.gallery-foto {
+    cursor: pointer;
+}
+
+
+/* gallery end */
+h1 {
+    /* width: 300px; */
+    margin: 50px auto;
+    background-color: rgb(250, 189, 178);
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+p {
+    margin-top: 20px;
+
+}
+
+.banner {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster';
+    color: #fff;
+    font-size: 50px;
+}
+
+.deskripsi {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+.lokasi-item {
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.text-block {
+    margin-top: 5px;
+}
+
+.lokasi-content img {
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.lokasi-content a {
+    font-weight: bold;
+    color: darkslateblue;
+}
+
+/* .lokasi-content {
+    text-align: center;
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    top: 50%;
+}
+
+.lokasi-content img {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+} */
+/* 
+.layer {
+    background: lawngreen;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.list-wisata {
+    font-size: 18px;
+
+}
+
+.list-wisata a {
+    color: whitesmoke;
+    font-weight: bold;
+
+}
+
+.list-wisata a:link {
+    text-decoration: none;
+}
+
+.wisata-item {
+    background-color: grey;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+/* contact */
+.contact-item {
+    background-color: #F0E1DE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.social-media {
+    font-size: 50px;
+    margin-top: 20px;
+
+}
+
+.media-item {
+    margin-right: 50px;
+}
+
+.social-media a {
+    color: black;
+}
+
+/* contact */
+
+
+/* wisata */
+/* 1.GK */
+.bbintang {
+    background: url(img/wisata/bbintang.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.poktunggal {
+    background: url(img/wisata/poktunggal.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.amarilis {
+    background: url(img/wisata/amarilis.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.biru {
+    background: url(img/wisata/biru.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pindul {
+    background: url(img/wisata/pindul.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+/* 2.Bantul */
+.ptritis {
+    background: url(img/wisata/ptritis.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pinus {
+    background: url(img/wisata/pinus.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.selarong {
+    background: url(img/wisata/selarong.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.parang {
+    background: url(img/wisata/parang.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.mangunan {
+    background: url(img/wisata/mangunan.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Kulon */
+.teh {
+    background: url(img/wisata/teh.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.kalibiru {
+    background: url(img/wisata/kalibiru.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sermo {
+    background: url(img/wisata/sermo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.kiskendo {
+    background: url(img/wisata/kiskendo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ayunan {
+    background: url(img/wisata/ayunan.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sleman */
+.prambanan {
+    background: url(img/wisata/prambanan3.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.merapi {
+    background: url(img/wisata/merapi.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.breksi {
+    background: url(img/wisata/breksi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ratuboko {
+    background: url(img/wisata/ratuboko.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ijo {
+    background: url(img/wisata/ijo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* YK */
+.malioboro {
+    background: url(img/wisata/malioboro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.keraton {
+    background: url(img/wisata/keraton.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tugu {
+    background: url(img/wisata/tugu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tamansari {
+    background: url(img/wisata/tamansari.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.benteng {
+    background: url(img/wisata/benteng.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* wisata end */
+
+
+/* Review */
+.review {
+    background: #fff3f3;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.review h3 {
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Review end */
+
+/* Partner */
+.partner {
+    background-color: aqua;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* partner end */
+
+/* Detail wisata */
+/* .wisata-banner {
+    height: 80vh;
+    background: url('img/3.jpg');
+    background-size: cover;
+    background-position: center;
+} */
+
+.carousel-inner {
+    height: 500px !important;
+}
+
+/* .desc {
+    align-items: center;
+} */
+
+/* detail wisata end */
+
+/* Review */
+.treview {
+    margin-top: 30px;
+}
+
+/* Review end*/
+
+/* about */
+.about {
+    font-size: larger;
+    background-color: #F0E1DE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* about end */
+
+/* about */
+.partner {
+    background-color: #F0E1DE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* about end */
