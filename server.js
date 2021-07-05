@@ -39,8 +39,8 @@ app.get('/', (req, res) => {
 })
 
 //testimoni page
-app.get('/testimoni', (req, res) => {
-    const reviews = Review.find()
+app.get('/testimoni', async (req, res) => {
+    const reviews = await Review.find()
 
     res.render('testimoni', {
     reviews
