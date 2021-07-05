@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { body, validationResult, check } = require('express-validator');
 
-require("dotenv").config();
 
 const dbConfig = require('./utils/db');
 const Review = require('./model/review')
@@ -18,8 +17,8 @@ app.use(express.urlencoded({
     extended: true
 }))
 
-const uri = process.env.MONGODB_URI
-mongoose.connect(uri, {
+const db = 'mongodb+srv://jogjavacation:<jogjavacation>@jogjavacation.bente.mongodb.net/jogjavacation?retryWrites=true&w=majority&ssl=true'
+mongoose.connect(db, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
