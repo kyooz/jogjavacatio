@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { body, validationResult, check } = require('express-validator');
 
+require("dotenv").config();
+
 const dbConfig = require('./utils/db');
 const Review = require('./model/review')
 
@@ -16,21 +18,38 @@ app.use(express.urlencoded({
     extended: true
 }))
 
+const uri = process.env.MONGODB_URI
+mongoose.connect(uri, {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+  })
+  .then(x => {
+    console.log(
+      `Connected to Mongo! Database name: "${x.connections[0].name}"`
+    );
+  })
+  .catch(err => {
+    console.error("Error connecting to mongo", err);
+  });
+
+
 mongoose.Promise = global.Promise;
 
 // Connect MongoDB at default port 27017.
-mongoose.connect(dbConfig.url, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
+// mongoose.connect(dbConfig.url, {
+//     useNewUrlParser: true,
+//     useCreateIndex: true,
+//     useUnifiedTopology: true,
 
-}, (err) => {
-    if (!err) {
-        console.log('MongoDB Connection Succeeded.')
-    } else {
-        console.log('Error in DB connection: ' + err)
-    }
-});
+// }, (err) => {
+//     if (!err) {
+//         console.log('MongoDB Connection Succeeded.')
+//     } else {
+//         console.log('Error in DB connection: ' + err)
+//     }
+// });
 
 
 

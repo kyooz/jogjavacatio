@@ -5,4 +5,8 @@ module.exports=(app)=>{
     app.get('/reviews', reviews.findAll)
     //create reviews
     app.post('/reviews', reviews.create)
+    //update
+    app.put('/reviews/:reviewId', reviews.update)
+    //delete
+    app.delete('/reviews/:reviewId', reviews.delete)
 }
