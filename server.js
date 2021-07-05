@@ -17,7 +17,7 @@ app.use(express.urlencoded({
     extended: true
 }))
 
-const db = 'mongodb+srv://jogjavacation:<jogjavacation>@jogjavacation.bente.mongodb.net/jogjavacation?retryWrites=true&w=majority&ssl=true'
+const db = 'mongodb+srv://jogjavacation:jogjavacation@jogjavacation.bente.mongodb.net/jogjavacation?retryWrites=true&w=majority&ssl=true'
 mongoose.connect(db, {
     useCreateIndex: true,
     useNewUrlParser: true,
